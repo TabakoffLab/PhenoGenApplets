@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : DevTranscript.xml
+    Created on : December 9, 2011, 11:24 AM
+    Author     : smahaffey
+    Description:
+        Purpose of the document follows.
+-->
+
+<TranscriptList>
+<Transcript ID="t1" BioType="Protein Coding" strand="+">
+	<Exon ID="1">
+		<Start>1</Start>
+		<Stop>250</Stop>
+		<ProtCodeStart>50</ProtCodeStart>
+		<ProtCodeStop>250</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="1">
+				<locationStart>25</locationStart>
+				<locationStop>50</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+			<Probe ID ="2">
+				<locationStart>100</locationStart>
+ 				<locationStop>125</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+	<Exon ID="2">
+ 		<Start>400</Start>
+		<Stop>800</Stop>
+		<ProtCodeStart>400</ProtCodeStart>
+		<ProtCodeStop>800</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="3">
+				<locationStart>525</locationStart>
+				<locationStop>550</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+			<Probe ID ="4">
+				<locationStart>650</locationStart>
+				<locationStop>675</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>-</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+	<Exon ID="3">
+		<Start>900</Start>
+		<Stop>1200</Stop>
+		<ProtCodeStart>900</ProtCodeStart>
+		<ProtCodeStop>1200</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="5">
+				<locationStart>925</locationStart>
+				<locationStop>950</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+			<Probe ID ="6">
+				<locationStart>1000</locationStart>
+				<locationStop>1025</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>\
+	<Exon ID="4">\
+		<Start>1300</Start>\
+		<Stop>1400</Stop>\
+		<ProtCodeStart>1300</ProtCodeStart>\
+		<ProtCodeStop>1400</ProtCodeStop>\
+		<ProbeList>\
+			<Probe ID="7">\
+				<locationStart>1350</locationStart>\
+				<locationStop>1375</locationStop>\
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>\
+				<strand>+</strand>\
+			</Probe>\
+		</ProbeList>\
+	</Exon>\
+	<Exon ID="5">
+		<Start>1700</Start>
+		<Stop>1900</Stop>
+		<ProtCodeStart>1700</ProtCodeStart>
+		<ProtCodeStop>1900</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="8">
+				<locationStart>1825</locationStart>
+				<locationStop>1850</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+</Transcript>
+<Transcript ID="t2" BioType="Protein Coding" strand="+">
+ 	<Exon ID="1">
+		<Start>1</Start>
+		<Stop>250</Stop>
+		<ProtCodeStart>50</ProtCodeStart>
+		<ProtCodeStop>250</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="1">
+				<locationStart>25</locationStart>
+				<locationStop>50</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+			<Probe ID ="2">
+				<locationStart>100</locationStart>
+				<locationStop>125</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+	<Exon ID="2">
+		<Start>400</Start>
+		<Stop>800</Stop>
+		<ProtCodeStart>400</ProtCodeStart>
+		<ProtCodeStop>800</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="3">
+				<locationStart>525</locationStart>
+				<locationStop>550</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+			<Probe ID ="4">
+				<locationStart>650</locationStart>
+				<locationStop>675</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>-</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+	<Exon ID="3">
+		<Start>900</Start>
+		<Stop>1200</Stop>
+		<ProtCodeStart>900</ProtCodeStart>
+		<ProtCodeStop>1200</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="5">
+				<locationStart>925</locationStart>
+				<locationStop>950</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+			<Probe ID ="6">
+				<locationStart>1000</locationStart>
+				<locationStop>1025</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+	<Exon ID="4">
+		<Start>1210</Start>
+		<Stop>1230</Stop>
+		<ProtCodeStart>1210</ProtCodeStart>
+		<ProtCodeStop>1230</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="9">
+				<locationStart>1210</locationStart>
+				<locationStop>1230</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+        <Exon ID="5">
+		<Start>1240</Start>
+		<Stop>1250</Stop>
+		<ProtCodeStart>1240</ProtCodeStart>
+		<ProtCodeStop>1250</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="10">
+				<locationStart>1240</locationStart>
+				<locationStop>1250</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+        <Exon ID="6">
+		<Start>1270</Start>
+		<Stop>1290</Stop>
+		<ProtCodeStart>1270</ProtCodeStart>
+		<ProtCodeStop>1290</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="11">
+				<locationStart>1270</locationStart>
+				<locationStop>1290</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+	<Exon ID="7">
+		<Start>1300</Start>
+		<Stop>1400</Stop>
+		<ProtCodeStart>1300</ProtCodeStart>
+		<ProtCodeStop>1400</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="7">
+				<locationStart>1350</locationStart>
+				<locationStop>1375</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+	<Exon ID="8">
+		<Start>1700</Start>
+		<Stop>1900</Stop>
+		<ProtCodeStart>1700</ProtCodeStart>
+		<ProtCodeStop>1900</ProtCodeStop>
+		<ProbeList>
+			<Probe ID="8">
+				<locationStart>1825</locationStart>
+				<locationStop>1850</locationStop>
+				<sequence> ATTGACCGTAGTTAGCTAGTA</sequence>
+				<strand>+</strand>
+			</Probe>
+		</ProbeList>
+	</Exon>
+</Transcript>
+</TranscriptList>
