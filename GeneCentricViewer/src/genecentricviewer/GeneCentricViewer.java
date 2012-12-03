@@ -2945,6 +2945,8 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 boolean intron=this.intronFilterchbx.isSelected();
                 boolean opStrand=this.oppStrandFilterchbx.isSelected();
                 mainExonCorPanel1.updateLeftMap(exCorLeftTranscb.getSelectedIndex(), annotString, dabgTxt, heritTxt, opStrand, dabgNA, heritNA, intron);
+                mainExonCorPanel1.updateRightMap(exCorRightTranscb.getSelectedIndex(), annotString, dabgTxt, heritTxt, opStrand, dabgNA, heritNA, intron);
+                
             }
             //mainExonCorPanel1.setup(fhmd,geneID,geneSymbol,imageURL,);
             this.ExCor_loadinglbl.setVisible(false);
@@ -2998,6 +3000,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             boolean intron=this.intronFilterchbx.isSelected();
             boolean opStrand=this.oppStrandFilterchbx.isSelected();
             mainExonCorPanel1.updateLeftMap(exCorLeftTranscb.getSelectedIndex(), annotString, dabgTxt, heritTxt, opStrand, dabgNA, heritNA, intron);
+            //mainExonCorPanel1.updateRightMap(exCorRightTranscb.getSelectedIndex(), annotString, dabgTxt, heritTxt, opStrand, dabgNA, heritNA, intron);
         }
     }//GEN-LAST:event_exCorGenecbActionPerformed
 

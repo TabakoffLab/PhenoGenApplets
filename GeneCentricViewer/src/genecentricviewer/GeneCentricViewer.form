@@ -955,7 +955,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="filterDisplayHelpbtn" min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
-              <Component id="jTabbedPane1" alignment="0" pref="988" max="32767" attributes="0"/>
+              <Component id="jTabbedPane1" alignment="0" pref="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -1015,7 +1015,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="transcriptFilterchbx" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="transcriptFiltercb" pref="444" max="32767" attributes="0"/>
+                              <Component id="transcriptFiltercb" pref="456" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1085,7 +1085,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="foldDiffSigncb" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="foldDifftxt" max="32767" attributes="0"/>
+                              <Component id="foldDifftxt" pref="15" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1156,7 +1156,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="pvalcb" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="pvaltxt" pref="111" max="32767" attributes="0"/>
+                              <Component id="pvaltxt" pref="117" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1216,7 +1216,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="fdrcb" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="fdrtxt" pref="26" max="32767" attributes="0"/>
+                              <Component id="fdrtxt" pref="32" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1274,7 +1274,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="psFilterchbx" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="psNametxt" pref="139" max="32767" attributes="0"/>
+                              <Component id="psNametxt" pref="145" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1345,7 +1345,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="oppStrandFilterchbx" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1379,7 +1379,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="annotFilterchbx" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="annotFiltercb" pref="121" max="32767" attributes="0"/>
+                              <Component id="annotFiltercb" pref="127" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -1773,7 +1773,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jButton7" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="hmLegendPanel" pref="757" max="32767" attributes="0"/>
+                              <Component id="hmLegendPanel" pref="769" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="parentalExpressionHelpbtn" min="-2" pref="20" max="-2" attributes="0"/>
                           </Group>
@@ -1898,7 +1898,7 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="239" max="-2" attributes="0"/>
                           <Component id="Herit_loadingpb" min="-2" pref="486" max="-2" attributes="0"/>
-                          <EmptySpace pref="242" max="32767" attributes="0"/>
+                          <EmptySpace pref="254" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="426" max="-2" attributes="0"/>
@@ -2003,7 +2003,7 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="errorLbl" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="27" max="32767" attributes="0"/>
+                          <EmptySpace pref="39" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="Exp_loadingpb" pref="486" max="32767" attributes="0"/>
                               <Component id="Exp_loadinglbl" max="32767" attributes="0"/>
@@ -2113,7 +2113,7 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="errorLbl1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="90" max="32767" attributes="0"/>
+                          <EmptySpace pref="102" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Component id="ExCor_loadingpb" max="32767" attributes="0"/>
                               <Component id="ExCor_loadinglbl" max="32767" attributes="0"/>
@@ -2206,7 +2206,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="446" max="-2" attributes="0"/>
                           <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="335" max="32767" attributes="0"/>
+                          <EmptySpace pref="347" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
