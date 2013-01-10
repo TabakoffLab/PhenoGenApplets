@@ -136,6 +136,7 @@ public class DownloadThread extends Thread{
             System.out.println("END DOWNLOAD");
         }catch(OutOfMemoryError e){
             outOfMem=true;
+            gcv.setOutOfMem(outOfMem);
         }
         /*try {
             this.wait(15000);

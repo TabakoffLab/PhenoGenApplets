@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JAppletFormInfo">
+<Form version="1.8" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JAppletFormInfo">
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="DE_Disp1_rbgroup">
     </Component>
@@ -955,7 +955,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="filterDisplayHelpbtn" min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
-              <Component id="jTabbedPane1" alignment="0" pref="0" max="32767" attributes="0"/>
+              <Component id="jTabbedPane1" alignment="0" pref="2814" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -1015,7 +1015,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="transcriptFilterchbx" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="transcriptFiltercb" pref="456" max="32767" attributes="0"/>
+                              <Component id="transcriptFiltercb" pref="2270" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1085,7 +1085,8 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="foldDiffSigncb" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="foldDifftxt" pref="15" max="32767" attributes="0"/>
+                              <Component id="foldDifftxt" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="2072" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1156,7 +1157,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="pvalcb" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="pvaltxt" pref="117" max="32767" attributes="0"/>
+                              <Component id="pvaltxt" pref="1024" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1216,7 +1217,8 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="fdrcb" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="fdrtxt" pref="32" max="32767" attributes="0"/>
+                              <Component id="fdrtxt" max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="2826" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1274,7 +1276,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="psFilterchbx" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="psNametxt" pref="145" max="32767" attributes="0"/>
+                              <Component id="psNametxt" pref="1052" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1311,7 +1313,7 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="907" max="32767" attributes="0"/>
                               <Component id="intronFilterchbx" min="-2" pref="281" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -1345,7 +1347,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="oppStrandFilterchbx" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="908" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1379,7 +1381,7 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="annotFilterchbx" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="annotFiltercb" pref="127" max="32767" attributes="0"/>
+                              <Component id="annotFiltercb" pref="1034" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -1710,19 +1712,25 @@
                                           <EmptySpace min="-2" pref="456" max="-2" attributes="0"/>
                                           <Component id="DE_loadinglbl" min="-2" max="-2" attributes="0"/>
                                       </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="319" max="-2" attributes="0"/>
+                                          <Component id="errorsp" min="-2" pref="595" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace pref="612" max="32767" attributes="0"/>
+                                  <EmptySpace pref="2006" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="errorsp" min="-2" pref="212" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="DE_loadinglbl" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="DE_loadingpb" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="2454" max="32767" attributes="0"/>
+                                  <EmptySpace pref="2509" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1739,6 +1747,18 @@
                             <Property name="text" type="java.lang.String" value="Loading Data..."/>
                           </Properties>
                         </Component>
+                        <Container class="javax.swing.JScrollPane" name="errorsp">
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="javax.swing.JEditorPane" name="jEditorPane1">
+                              <Properties>
+                                <Property name="contentType" type="java.lang.String" value="text/html" noResource="true"/>
+                                <Property name="text" type="java.lang.String" value="&lt;html&gt;&#xa;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p style=\u005c&quot;margin-top: 0\u005c&quot;&gt;&#xa; &lt;b&gt;Out of Memory Error:&lt;/b&gt; &lt;BR&gt;&lt;BR&gt; &#xa;1. Please upgrade the Java Runtime Environment from &lt;a href=\u005c&quot;http://www.Java.com\u005c&quot;&gt;http://www.Java.com&lt;/a&gt; or if an update is not available or java is updated, please proceed to step 2.&lt;BR&gt;&#xa;2. Open the Java Preferences panel.  &lt;BR&gt;&#xa;3. Under the General tab for each checked version perform steps 4-5.&lt;BR&gt;&#xa;4. Click options. &lt;BR&gt;&#xa;5. Enter &quot;-Xmx256M&quot; (Do not include the quoation marks)  this will allow 256 megabytes of RAM to be used which should be enough for most genes.&#xa;    &lt;/p&gt;&#xa;  &lt;/body&gt;&#xa;&lt;/html&gt;" containsInvalidXMLChars="true"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
                       </SubComponents>
                     </Container>
                   </SubComponents>
@@ -1773,7 +1793,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jButton7" min="-2" pref="40" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="hmLegendPanel" pref="769" max="32767" attributes="0"/>
+                              <Component id="hmLegendPanel" pref="2583" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="parentalExpressionHelpbtn" min="-2" pref="20" max="-2" attributes="0"/>
                           </Group>
@@ -1898,7 +1918,7 @@
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="239" max="-2" attributes="0"/>
                           <Component id="Herit_loadingpb" min="-2" pref="486" max="-2" attributes="0"/>
-                          <EmptySpace pref="254" max="32767" attributes="0"/>
+                          <EmptySpace pref="2068" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="426" max="-2" attributes="0"/>
@@ -2003,7 +2023,7 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="errorLbl" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="39" max="32767" attributes="0"/>
+                          <EmptySpace pref="1853" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="Exp_loadingpb" pref="486" max="32767" attributes="0"/>
                               <Component id="Exp_loadinglbl" max="32767" attributes="0"/>
@@ -2113,7 +2133,7 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="errorLbl1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="102" max="32767" attributes="0"/>
+                          <EmptySpace pref="1916" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
                               <Component id="ExCor_loadingpb" max="32767" attributes="0"/>
                               <Component id="ExCor_loadinglbl" max="32767" attributes="0"/>
@@ -2206,7 +2226,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="446" max="-2" attributes="0"/>
                           <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="347" max="32767" attributes="0"/>
+                          <EmptySpace pref="2161" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -2230,6 +2250,28 @@
                   </Events>
                 </Component>
               </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel1">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                  <JTabbedPaneConstraints tabName="tab6">
+                    <Property name="tabTitle" type="java.lang.String" value="tab6"/>
+                  </JTabbedPaneConstraints>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="2793" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="952" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
             </Container>
           </SubComponents>
         </Container>

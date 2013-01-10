@@ -798,6 +798,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         for(int i=0;i<loaded.length;i++){
             loaded[i]=false;
         }
+        errorsp.setVisible(false);
         
         ArrayList<String[]> downloadFiles=new ArrayList<String[]>();
         
@@ -1231,6 +1232,8 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         heatMapGraphicsPanel1 = new edu.ucdenver.ccp.phenogen.applets.graphics.HeatMapGraphicsPanel();
         DE_loadingpb = new javax.swing.JProgressBar();
         DE_loadinglbl = new javax.swing.JLabel();
+        errorsp = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
         jPanel4 = new javax.swing.JPanel();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
@@ -1258,6 +1261,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         errorLbl1 = new javax.swing.JLabel();
         EQTL_Tab = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         filterDisplayHelpbtn = new javax.swing.JButton();
 
         FillerPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -1834,7 +1838,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Transcript_FilterLayout.createSequentialGroup()
                 .add(transcriptFilterchbx)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(transcriptFiltercb, 0, 444, Short.MAX_VALUE))
+                .add(transcriptFiltercb, 0, 2270, Short.MAX_VALUE))
         );
         Transcript_FilterLayout.setVerticalGroup(
             Transcript_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1879,7 +1883,8 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(foldDiffSigncb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(foldDifftxt))
+                .add(foldDifftxt)
+                .add(2072, 2072, 2072))
         );
         DE_Filter1Layout.setVerticalGroup(
             DE_Filter1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1919,7 +1924,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(pvalcb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(pvaltxt, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
+                .add(pvaltxt, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 1024, Short.MAX_VALUE))
         );
         DE_Filter2Layout.setVerticalGroup(
             DE_Filter2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1958,7 +1963,8 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(fdrcb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(fdrtxt, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                .add(fdrtxt)
+                .add(2826, 2826, 2826))
         );
         DE_Filter3Layout.setVerticalGroup(
             DE_Filter3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1988,7 +1994,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Probeset_FilterLayout.createSequentialGroup()
                 .add(psFilterchbx)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(psNametxt, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE))
+                .add(psNametxt, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 1052, Short.MAX_VALUE))
         );
         Probeset_FilterLayout.setVerticalGroup(
             Probeset_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -2013,7 +2019,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         Intron_FilterLayout.setHorizontalGroup(
             Intron_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, Intron_FilterLayout.createSequentialGroup()
-                .add(0, 0, Short.MAX_VALUE)
+                .add(0, 907, Short.MAX_VALUE)
                 .add(intronFilterchbx, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 281, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
         Intron_FilterLayout.setVerticalGroup(
@@ -2038,7 +2044,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             OpStrand_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(OpStrand_FilterLayout.createSequentialGroup()
                 .add(oppStrandFilterchbx)
-                .add(0, 0, Short.MAX_VALUE))
+                .add(0, 908, Short.MAX_VALUE))
         );
         OpStrand_FilterLayout.setVerticalGroup(
             OpStrand_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -2070,7 +2076,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Annot_FilterLayout.createSequentialGroup()
                 .add(annotFilterchbx)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(annotFiltercb, 0, 121, Short.MAX_VALUE)
+                .add(annotFiltercb, 0, 1034, Short.MAX_VALUE)
                 .addContainerGap())
         );
         Annot_FilterLayout.setVerticalGroup(
@@ -2255,6 +2261,10 @@ public class GeneCentricViewer extends javax.swing.JApplet {
 
         DE_loadinglbl.setText("Loading Data...");
 
+        jEditorPane1.setContentType("text/html"); // NOI18N
+        jEditorPane1.setText("<html>\n<head></head><body><p style=\\\"margin-top: 0\\\">\n <b>Out of Memory Error:</b> <BR><BR> \n1. Please upgrade the Java Runtime Environment from <a href=\\\"http://www.Java.com\\\">http://www.Java.com</a> or if an update is not available or java is updated, please proceed to step 2.<BR>\n2. Open the Java Preferences panel.  <BR>\n3. Under the General tab for each checked version perform steps 4-5.<BR>\n4. Click options. <BR>\n5. Enter \"-Xmx256M\" (Do not include the quoation marks)  this will allow 256 megabytes of RAM to be used which should be enough for most genes.\n    </p>\n  </body>\n</html>");
+        errorsp.setViewportView(jEditorPane1);
+
         org.jdesktop.layout.GroupLayout heatMapGraphicsPanel1Layout = new org.jdesktop.layout.GroupLayout(heatMapGraphicsPanel1);
         heatMapGraphicsPanel1.setLayout(heatMapGraphicsPanel1Layout);
         heatMapGraphicsPanel1Layout.setHorizontalGroup(
@@ -2266,17 +2276,22 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                         .add(DE_loadingpb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 379, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                     .add(heatMapGraphicsPanel1Layout.createSequentialGroup()
                         .add(456, 456, 456)
-                        .add(DE_loadinglbl)))
-                .addContainerGap(612, Short.MAX_VALUE))
+                        .add(DE_loadinglbl))
+                    .add(heatMapGraphicsPanel1Layout.createSequentialGroup()
+                        .add(319, 319, 319)
+                        .add(errorsp, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 595, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(2006, Short.MAX_VALUE))
         );
         heatMapGraphicsPanel1Layout.setVerticalGroup(
             heatMapGraphicsPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(heatMapGraphicsPanel1Layout.createSequentialGroup()
-                .add(70, 70, 70)
+                .addContainerGap()
+                .add(errorsp, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 212, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(DE_loadinglbl)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(DE_loadingpb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(2454, Short.MAX_VALUE))
+                .addContainerGap(2509, Short.MAX_VALUE))
         );
 
         jScrollPane3.setViewportView(heatMapGraphicsPanel1);
@@ -2345,7 +2360,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jButton7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(hmLegendPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 757, Short.MAX_VALUE)
+                .add(hmLegendPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 2583, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(parentalExpressionHelpbtn, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
@@ -2401,7 +2416,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Herit_TabLayout.createSequentialGroup()
                 .add(239, 239, 239)
                 .add(Herit_loadingpb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 486, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(242, Short.MAX_VALUE))
+                .addContainerGap(2068, Short.MAX_VALUE))
             .add(Herit_TabLayout.createSequentialGroup()
                 .add(426, 426, 426)
                 .add(Herit_loadinglbl, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 104, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -2459,7 +2474,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Exp_TabLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(errorLbl)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 27, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 1853, Short.MAX_VALUE)
                 .add(Exp_TabLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(Exp_loadingpb, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 486, Short.MAX_VALUE)
                     .add(Exp_loadinglbl, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -2513,7 +2528,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, ExCor_TabLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(errorLbl1)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 90, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 1916, Short.MAX_VALUE)
                 .add(ExCor_TabLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
                     .add(ExCor_loadingpb, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(ExCor_loadinglbl, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -2552,7 +2567,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(EQTL_TabLayout.createSequentialGroup()
                 .add(446, 446, 446)
                 .add(jButton3)
-                .addContainerGap(335, Short.MAX_VALUE))
+                .addContainerGap(2161, Short.MAX_VALUE))
         );
         EQTL_TabLayout.setVerticalGroup(
             EQTL_TabLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -2563,6 +2578,19 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         );
 
         jTabbedPane1.addTab("eQTL", EQTL_Tab);
+
+        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 2793, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(0, 952, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab6", jPanel1);
 
         filterDisplayHelpbtn.setBackground(new java.awt.Color(255, 255, 255));
         filterDisplayHelpbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/genecentricviewer/help.png"))); // NOI18N
@@ -2588,7 +2616,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .add(DisplayOptPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 394, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(filterDisplayHelpbtn, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-            .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 988, Short.MAX_VALUE)
+            .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 2814, Short.MAX_VALUE)
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -3154,6 +3182,14 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         }
        return ret;
    }
+   
+   public void setOutOfMem(boolean outOfMem){
+       if(outOfMem){
+           errorsp.setVisible(outOfMem);
+       }else{
+           errorsp.setVisible(false);
+       }
+   }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Annot_Filter;
@@ -3216,6 +3252,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
     private javax.swing.JCheckBox dispHeritValueschbx;
     private javax.swing.JLabel errorLbl;
     private javax.swing.JLabel errorLbl1;
+    private javax.swing.JScrollPane errorsp;
     private javax.swing.JComboBox exCorGenecb;
     private javax.swing.JComboBox exCorLeftTranscb;
     private javax.swing.JComboBox exCorRightTranscb;
@@ -3248,6 +3285,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -3260,6 +3298,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel4;
