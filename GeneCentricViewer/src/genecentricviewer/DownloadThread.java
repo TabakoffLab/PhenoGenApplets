@@ -144,6 +144,7 @@ public class DownloadThread extends Thread{
             Logger.getLogger(DownloadThread.class.getName()).log(Level.SEVERE, null, ex);
         }*/
         //gcv.setup(fhmd, genes,outOfMem);
+        gcv.setDownloadFinished();
         System.out.println("END DOWNLOAD AND GUI UPDATE");
     }
     

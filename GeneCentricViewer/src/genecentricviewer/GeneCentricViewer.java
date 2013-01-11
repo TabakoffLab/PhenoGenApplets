@@ -35,6 +35,7 @@ import javax.swing.JComponent;
 import javax.swing.JScrollPane;
 import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
+import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import netscape.javascript.JSException;
@@ -87,6 +88,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
     HashMap completeProbeset=new HashMap();
     
     boolean[] loaded=new boolean[5];
+    boolean downloadFinished=false;
     
     
     
@@ -758,24 +760,88 @@ public class GeneCentricViewer extends javax.swing.JApplet {
          * default look and feel. For details see
          * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
+        String macBug=getParameter("macBug");
+        if(macBug!=null&&macBug.equals("true")){
+            try {
+                    javax.swing.UIManager.setLookAndFeel(
+                    javax.swing.UIManager.getCrossPlatformLookAndFeelClassName());
+                } catch (ClassNotFoundException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (InstantiationException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (IllegalAccessException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (UnsupportedLookAndFeelException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                }
+        }else{
+            try {
+                for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                    if ("Nimbus".equals(info.getName())) {
+                        javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                        break;
+                    }
+                }
+            } catch (ClassNotFoundException ex) {
+                java.util.logging.Logger.getLogger(GeneCentricViewer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                try {
+                    javax.swing.UIManager.setLookAndFeel(
+                    javax.swing.UIManager.getCrossPlatformLookAndFeelClassName());
+                } catch (ClassNotFoundException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (InstantiationException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (IllegalAccessException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (UnsupportedLookAndFeelException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                }
+            } catch (InstantiationException ex) {
+                java.util.logging.Logger.getLogger(GeneCentricViewer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                try {
+                    javax.swing.UIManager.setLookAndFeel(
+                    javax.swing.UIManager.getCrossPlatformLookAndFeelClassName());
+                } catch (ClassNotFoundException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (InstantiationException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (IllegalAccessException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (UnsupportedLookAndFeelException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                }
+            } catch (IllegalAccessException ex) {
+                java.util.logging.Logger.getLogger(GeneCentricViewer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                try {
+                    javax.swing.UIManager.setLookAndFeel(
+                    javax.swing.UIManager.getCrossPlatformLookAndFeelClassName());
+                } catch (ClassNotFoundException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (InstantiationException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (IllegalAccessException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (UnsupportedLookAndFeelException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                }
+            } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+                java.util.logging.Logger.getLogger(GeneCentricViewer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                try {
+                    javax.swing.UIManager.setLookAndFeel(
+                    javax.swing.UIManager.getCrossPlatformLookAndFeelClassName());
+                } catch (ClassNotFoundException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (InstantiationException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (IllegalAccessException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
+                } catch (UnsupportedLookAndFeelException ex1) {
+                    Logger.getLogger(GeneCentricViewer.class.getName()).log(Level.SEVERE, null, ex1);
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GeneCentricViewer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GeneCentricViewer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GeneCentricViewer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GeneCentricViewer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
         /*
          * Create and display the applet
          */
@@ -930,12 +996,12 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             
         });
         
-        try{
+        /*try{
             JSObject window = (JSObject) JSObject.getWindow(this);
             window.call("hideWorking", new Object[] {})   ;
         }catch(JSException e){
             e.printStackTrace(System.err);
-        }
+        }*/
         
         initComplete=true;
         //mainExonCorPanel1.setLoadingLblText("Please select a Tissue to Load Data.");
@@ -1261,7 +1327,6 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         errorLbl1 = new javax.swing.JLabel();
         EQTL_Tab = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
         filterDisplayHelpbtn = new javax.swing.JButton();
 
         FillerPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -1808,6 +1873,8 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         setPreferredSize(new java.awt.Dimension(1000, 1200));
 
         jPanel12.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel12.setMaximumSize(new java.awt.Dimension(1000, 1200));
+        jPanel12.setPreferredSize(new java.awt.Dimension(1000, 1200));
         jPanel12.setSize(new java.awt.Dimension(1000, 100));
 
         FilterOptPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -1838,7 +1905,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Transcript_FilterLayout.createSequentialGroup()
                 .add(transcriptFilterchbx)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(transcriptFiltercb, 0, 2270, Short.MAX_VALUE))
+                .add(transcriptFiltercb, 0, 456, Short.MAX_VALUE))
         );
         Transcript_FilterLayout.setVerticalGroup(
             Transcript_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1881,10 +1948,10 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(fdcb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(foldDiffSigncb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(foldDiffSigncb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 75, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(foldDifftxt)
-                .add(2072, 2072, 2072))
+                .add(foldDifftxt, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 41, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DE_Filter1Layout.setVerticalGroup(
             DE_Filter1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1924,7 +1991,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(pvalcb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(pvaltxt, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 1024, Short.MAX_VALUE))
+                .add(pvaltxt, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE))
         );
         DE_Filter2Layout.setVerticalGroup(
             DE_Filter2Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1963,8 +2030,8 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(fdrcb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(fdrtxt)
-                .add(2826, 2826, 2826))
+                .add(fdrtxt, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 29, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DE_Filter3Layout.setVerticalGroup(
             DE_Filter3Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -1994,7 +2061,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Probeset_FilterLayout.createSequentialGroup()
                 .add(psFilterchbx)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(psNametxt, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 1052, Short.MAX_VALUE))
+                .add(psNametxt, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE))
         );
         Probeset_FilterLayout.setVerticalGroup(
             Probeset_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -2019,7 +2086,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         Intron_FilterLayout.setHorizontalGroup(
             Intron_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, Intron_FilterLayout.createSequentialGroup()
-                .add(0, 907, Short.MAX_VALUE)
+                .add(0, 0, Short.MAX_VALUE)
                 .add(intronFilterchbx, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 281, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
         Intron_FilterLayout.setVerticalGroup(
@@ -2044,7 +2111,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             OpStrand_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(OpStrand_FilterLayout.createSequentialGroup()
                 .add(oppStrandFilterchbx)
-                .add(0, 908, Short.MAX_VALUE))
+                .add(0, 1, Short.MAX_VALUE))
         );
         OpStrand_FilterLayout.setVerticalGroup(
             OpStrand_FilterLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -2076,7 +2143,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Annot_FilterLayout.createSequentialGroup()
                 .add(annotFilterchbx)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(annotFiltercb, 0, 1034, Short.MAX_VALUE)
+                .add(annotFiltercb, 0, 127, Short.MAX_VALUE)
                 .addContainerGap())
         );
         Annot_FilterLayout.setVerticalGroup(
@@ -2254,6 +2321,9 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         });
 
         DE_Tab.setBackground(new java.awt.Color(255, 255, 255));
+        DE_Tab.setMaximumSize(new java.awt.Dimension(1000, 2147483647));
+        DE_Tab.setPreferredSize(new java.awt.Dimension(979, 2834));
+        DE_Tab.setSize(new java.awt.Dimension(979, 0));
         DE_Tab.setLayout(new java.awt.BorderLayout());
 
         DE_loadingpb.setToolTipText("Loading Data...");
@@ -2360,7 +2430,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jButton7, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 40, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(hmLegendPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 2583, Short.MAX_VALUE)
+                .add(hmLegendPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 769, Short.MAX_VALUE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(parentalExpressionHelpbtn, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
@@ -2384,6 +2454,8 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         jTabbedPane1.addTab("Parental Expression", DE_Tab);
 
         Herit_Tab.setBackground(new java.awt.Color(255, 255, 255));
+        Herit_Tab.setMaximumSize(new java.awt.Dimension(1000, 32767));
+        Herit_Tab.setSize(new java.awt.Dimension(979, 0));
 
         heritGridPanel.setBackground(new java.awt.Color(255, 255, 255));
         heritGridPanel.setLayout(new java.awt.GridLayout(1, 0));
@@ -2416,7 +2488,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Herit_TabLayout.createSequentialGroup()
                 .add(239, 239, 239)
                 .add(Herit_loadingpb, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 486, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(2068, Short.MAX_VALUE))
+                .addContainerGap(254, Short.MAX_VALUE))
             .add(Herit_TabLayout.createSequentialGroup()
                 .add(426, 426, 426)
                 .add(Herit_loadinglbl, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 104, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -2440,6 +2512,8 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         jTabbedPane1.addTab("Panel Heritability", Herit_Tab);
 
         Exp_Tab.setBackground(new java.awt.Color(255, 255, 255));
+        Exp_Tab.setMaximumSize(new java.awt.Dimension(1000, 32767));
+        Exp_Tab.setSize(new java.awt.Dimension(979, 0));
 
         Exp_loadinglbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Exp_loadinglbl.setText("Loading Data...This process may take a few extra minutes to complete.");
@@ -2474,7 +2548,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(Exp_TabLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(errorLbl)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 1853, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 39, Short.MAX_VALUE)
                 .add(Exp_TabLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(Exp_loadingpb, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 486, Short.MAX_VALUE)
                     .add(Exp_loadinglbl, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -2499,6 +2573,8 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         jTabbedPane1.addTab("Panel Expression", Exp_Tab);
 
         ExCor_Tab.setBackground(new java.awt.Color(255, 255, 255));
+        ExCor_Tab.setMaximumSize(new java.awt.Dimension(1000, 32767));
+        ExCor_Tab.setSize(new java.awt.Dimension(979, 0));
 
         exonCorrHelpbtn.setBackground(new java.awt.Color(255, 255, 255));
         exonCorrHelpbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/genecentricviewer/help.png"))); // NOI18N
@@ -2528,7 +2604,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, ExCor_TabLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(errorLbl1)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 1916, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 102, Short.MAX_VALUE)
                 .add(ExCor_TabLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
                     .add(ExCor_loadingpb, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .add(ExCor_loadinglbl, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -2567,7 +2643,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
             .add(EQTL_TabLayout.createSequentialGroup()
                 .add(446, 446, 446)
                 .add(jButton3)
-                .addContainerGap(2161, Short.MAX_VALUE))
+                .addContainerGap(347, Short.MAX_VALUE))
         );
         EQTL_TabLayout.setVerticalGroup(
             EQTL_TabLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -2578,19 +2654,6 @@ public class GeneCentricViewer extends javax.swing.JApplet {
         );
 
         jTabbedPane1.addTab("eQTL", EQTL_Tab);
-
-        org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 2793, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(0, 952, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("tab6", jPanel1);
 
         filterDisplayHelpbtn.setBackground(new java.awt.Color(255, 255, 255));
         filterDisplayHelpbtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/genecentricviewer/help.png"))); // NOI18N
@@ -2616,7 +2679,7 @@ public class GeneCentricViewer extends javax.swing.JApplet {
                 .add(DisplayOptPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 394, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(filterDisplayHelpbtn, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-            .add(jTabbedPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 2814, Short.MAX_VALUE)
+            .add(jTabbedPane1)
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -3190,6 +3253,15 @@ public class GeneCentricViewer extends javax.swing.JApplet {
            errorsp.setVisible(false);
        }
    }
+   
+   
+   public void setDownloadFinished(){
+       this.downloadFinished=true;
+   }
+   
+   public boolean getDownloadFinished(){
+       return this.downloadFinished;
+   }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Annot_Filter;
@@ -3298,7 +3370,6 @@ public class GeneCentricViewer extends javax.swing.JApplet {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel4;
