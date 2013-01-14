@@ -136,6 +136,7 @@ public class DownloadThread extends Thread{
             System.out.println("END DOWNLOAD");
         }catch(OutOfMemoryError e){
             outOfMem=true;
+            gcv.setOutOfMem(outOfMem);
         }
         /*try {
             this.wait(15000);
@@ -143,6 +144,7 @@ public class DownloadThread extends Thread{
             Logger.getLogger(DownloadThread.class.getName()).log(Level.SEVERE, null, ex);
         }*/
         //gcv.setup(fhmd, genes,outOfMem);
+        gcv.setDownloadFinished();
         System.out.println("END DOWNLOAD AND GUI UPDATE");
     }
     
